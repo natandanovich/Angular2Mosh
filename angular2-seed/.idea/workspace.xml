@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e654bf2-bbaa-44b6-972e-f3cfe51fa975" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/course.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/courses.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/angular2-seed.iml" afterPath="$PROJECT_DIR$/.idea/angular2-seed.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.component.js" afterPath="$PROJECT_DIR$/app/app.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.component.js.map" afterPath="$PROJECT_DIR$/app/app.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.component.ts" afterPath="$PROJECT_DIR$/app/app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/courses.component.js" afterPath="$PROJECT_DIR$/app/courses.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/courses.component.js.map" afterPath="$PROJECT_DIR$/app/courses.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/courses.component.ts" afterPath="$PROJECT_DIR$/app/courses.component.ts" />
     </list>
     <ignored path="angular2-seed.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,15 +48,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courses.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="courses.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/courses.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="7" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="445">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding>
                 <element signature="e#43#82#0" expanded="true" />
-                <marker date="1476369891387" expanded="true" signature="255:373" placeholder="..." />
-                <marker date="1476369891387" expanded="true" signature="304:355" placeholder="..." />
+                <marker date="1476371654853" expanded="true" signature="355:473" placeholder="..." />
+                <marker date="1476371654853" expanded="true" signature="404:455" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -75,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authors.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="authors.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/authors.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
@@ -85,6 +82,16 @@
                 <marker date="1476370708907" expanded="true" signature="255:373" placeholder="..." />
                 <marker date="1476370708907" expanded="true" signature="304:355" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auto-grow.directive.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/auto-grow.directive.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" column="74" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,11 +121,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/courses.component.ts" />
         <option value="$PROJECT_DIR$/app/course.service.ts" />
         <option value="$PROJECT_DIR$/app/author.service.ts" />
         <option value="$PROJECT_DIR$/app/app.component.ts" />
         <option value="$PROJECT_DIR$/app/authors.component.ts" />
+        <option value="$PROJECT_DIR$/app/auto-grow.directive.ts" />
+        <option value="$PROJECT_DIR$/app/courses.component.ts" />
       </list>
     </option>
   </component>
@@ -273,12 +281,12 @@
       <option name="presentableId" value="Default" />
       <updated>1476250461282</updated>
       <workItem from="1476250463234" duration="3480000" />
-      <workItem from="1476369001854" duration="1791000" />
+      <workItem from="1476369001854" duration="2684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5271000" />
+    <option name="totallyTimeSpent" value="6164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -286,7 +294,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2109375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -355,8 +363,8 @@
           <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding>
             <element signature="e#43#82#0" expanded="true" />
-            <marker date="1476369891387" expanded="true" signature="255:373" placeholder="..." />
-            <marker date="1476369891387" expanded="true" signature="304:355" placeholder="..." />
+            <marker date="1476371654853" expanded="true" signature="355:473" placeholder="..." />
+            <marker date="1476371654853" expanded="true" signature="404:455" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -407,18 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/courses.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#82#0" expanded="true" />
-            <marker date="1476369891387" expanded="true" signature="255:373" placeholder="..." />
-            <marker date="1476369891387" expanded="true" signature="304:355" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-580">
@@ -453,6 +449,26 @@
             <element signature="e#43#82#0" expanded="true" />
             <marker date="1476370708907" expanded="true" signature="255:373" placeholder="..." />
             <marker date="1476370708907" expanded="true" signature="304:355" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/auto-grow.directive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="74" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/courses.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="e#43#82#0" expanded="true" />
+            <marker date="1476371654853" expanded="true" signature="355:473" placeholder="..." />
+            <marker date="1476371654853" expanded="true" signature="404:455" placeholder="..." />
           </folding>
         </state>
       </provider>
