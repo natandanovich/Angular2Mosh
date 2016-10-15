@@ -20,11 +20,12 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
+                    this.title = "Angular App";
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: '<h1>My First Angular 2 App</h1>'
+                        template: "\n        <!--<input type=\"text\" [value]=\"title\" (input)=\"title = $event.target.value\"/>-->\n        <input type=\"text\" [(ngModel)]=\"title\" />\n        <input type=\"button\" (click)=\"title = ''\" value=\"Clear\"/>\n        Preview: {{ title}}\n        \n"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
