@@ -21,11 +21,21 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             AppComponent = (function () {
                 function AppComponent() {
                     this.title = "Angular App";
+                    this.imageUrl = "./images/outline_star.png";
+                    this.isActive = true;
                 }
+                AppComponent.prototype.onClick = function () {
+                    if (this.isActive == true) {
+                        this.isActive = false;
+                    }
+                    else {
+                        this.isActive = true;
+                    }
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n        <!--<input type=\"text\" [value]=\"title\" (input)=\"title = $event.target.value\"/>-->\n        <input type=\"text\" [(ngModel)]=\"title\" />\n        <input type=\"button\" (click)=\"title = ''\" value=\"Clear\"/>\n        Preview: {{ title}}\n        \n"
+                        template: "\n        <i class=\"glyphicon\" [class.glyphicon-star-empty]=\"isActive===false\" [class.glyphicon-star]=\"isActive\" (click)=\"onClick()\"></i>\n        \n"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
