@@ -4,8 +4,13 @@ import {Component, Input, Output, EventEmitter} from 'angular2/core';
     selector: 'favorite',
     templateUrl: 'app/favorite.template.html'
     styles: [`
-    .glyphicon-star {
-        color: orange;
+    .glyphicon-heart {
+        color: lightgray;
+        cursor: pointer;
+    }
+    .glyphicon-heart-empty {
+        color: deeppink;
+        cursor: pointer;
     }
 `]
 })
@@ -15,7 +20,7 @@ export class FavoriteComponent {
 
     @Output() change = new EventEmitter();
 
-    onClick() {
+    onClick($event) {
         this.isFavorite = !this.isFavorite;
         this.change.emit({newValue: this.isFavorite});
     }

@@ -27,14 +27,21 @@ System.register(['angular2/core', './favorite.component'], function(exports_1, c
                         title: "Title",
                         isFavorite: true
                     };
+                    this.i = 10;
                 }
                 AppComponent.prototype.onFavoriteChange = function ($event) {
-                    console.log($event);
+                    console.log($event.newValue);
+                    if ($event.newValue == false) {
+                        this.i++;
+                    }
+                    else {
+                        this.i--;
+                    }
                 };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n        <favorite [isFavorite]=\"post.isFavorite\" (change)=\"onFavoriteChange($event)\"></favorite>\n",
+                        template: "\n        <favorite [isFavorite]=\"post.isFavorite\" (change)=\"onFavoriteChange($event)\"></favorite> {{i}}\n",
                         directives: [favorite_component_1.FavoriteComponent]
                     }), 
                     __metadata('design:paramtypes', [])

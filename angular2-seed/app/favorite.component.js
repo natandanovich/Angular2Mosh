@@ -23,7 +23,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.isFavorite = false;
                     this.change = new core_1.EventEmitter();
                 }
-                FavoriteComponent.prototype.onClick = function () {
+                FavoriteComponent.prototype.onClick = function ($event) {
                     this.isFavorite = !this.isFavorite;
                     this.change.emit({ newValue: this.isFavorite });
                 };
@@ -39,7 +39,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Component({
                         selector: 'favorite',
                         templateUrl: 'app/favorite.template.html',
-                        styles: ["\n    .glyphicon-star {\n        color: orange;\n    }\n"]
+                        styles: ["\n    .glyphicon-heart {\n        color: lightgray;\n        cursor: pointer;\n    }\n    .glyphicon-heart-empty {\n        color: deeppink;\n        cursor: pointer;\n    }\n"]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], FavoriteComponent);
