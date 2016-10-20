@@ -60,8 +60,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 VoterComponent = __decorate([
                     core_1.Component({
                         selector: 'voter',
-                        template: "\n                <span class=\"glyphicon glyphicon-chevron-up\" [class.highlighted]=\"iClickUp\" (click)=\"onClickUp()\"></span>\n                <br>\n                <span>{{voterScore}}</span>\n                <br>\n                <span class=\"glyphicon glyphicon-chevron-down\" [class.highlighted]=\"iClickDown\" (click)=\"onClickDown()\"></span>\n",
-                        styles: ["\n        .glyphicon {\n            color: lightgray;\n            cursor: pointer;\n        }\n        \n        .highlighted {\n            color: darkorange;\n        }\n"]
+                        template: "\n                <div>\n                <i class=\"glyphicon glyphicon-chevron-up\" [class.highlighted]=\"iClickUp\" (click)=\"onClickUp()\"></i>\n                <br>\n                <span>{{voterScore}}</span>\n                <br>\n                <i class=\"glyphicon glyphicon-chevron-down\" [class.highlighted]=\"iClickDown\" (click)=\"onClickDown()\"></i>\n                </div>\n                \n",
+                        styles: ["\n        \n        .glyphicon {\n            color: lightgray;\n            cursor: pointer;\n        }\n        \n        .highlighted {\n            color: darkorange;\n        }\n        \n        .div {\n        width: 20px;\n        text-align: center;\n        }\n        \n"]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], VoterComponent);
