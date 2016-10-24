@@ -1,7 +1,11 @@
 import {Component} from 'angular2/core';
+import {TweetComponent} from "./tweet.component";
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    template: `
+<tweet></tweet>
+`    ,
+    directives: [TweetComponent]
 })
 export class AppComponent { }
