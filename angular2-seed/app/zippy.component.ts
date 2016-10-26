@@ -5,15 +5,15 @@ import {Component, Input} from "angular2/core";
     template: `
             <div class="panel panel-default">
               <div class="panel-heading">
-                  <div align="left">{{title}}</div> 
-                  <div align="right"><i
-                  class="glyphicon"
+                  {{title}} 
+                  <i
+                  class="pull-right glyphicon"
                   [ngClass]="{
                     'glyphicon-chevron-down': !isOpen,
                     'glyphicon-chevron-up': isOpen
                     }" 
                   (click)="onClick()">
-                  </i></div>
+                  </i>
               </div>
               <div *ngIf="isOpen == true" class="panel-body">
                 <ng-content></ng-content>
