@@ -3,7 +3,13 @@ import {ContactFormComponent} from "./contact-form.component";
 
 @Component({
     selector: 'my-app',
-    template: '<contact-form></contact-form>',
-    directives: [ContactFormComponent]
+    template: '<div class="formArea"><contact-form></contact-form></div>',
+    directives: [ContactFormComponent],
+    styles: [`
+    .formArea{
+        padding: 50px;
+    }
+    `]
 })
-export class AppComponent { }
+export class AppComponent {
+}
