@@ -1,7 +1,19 @@
 import {Component} from 'angular2/core';
+import {EmailSubscriptionComponent} from "./emailsubscription.component";
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    template: `<div class="mailForm">
+                <emailSubscription></emailSubscription>
+               </div>
+
+`,
+    styles: [`
+    .mailForm {
+    padding: 50px;
+    }
+    `],
+    directives: [EmailSubscriptionComponent],
 })
-export class AppComponent { }
+export class AppComponent {
+}

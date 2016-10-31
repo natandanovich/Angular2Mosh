@@ -1,0 +1,43 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f.form)">
+    <div>
+        <label for="fullName">Name</label>
+        <input
+                ngControl="fullName"
+                #fullName="ngForm"
+                id="fullName"
+                type="text"
+                class="form-control"
+                required
+                minlength="3">
+        <div *ngIf="fullName.touched && fullName.errors">
+            <div class="alert alert-danger" *ngIf="fullName.errors.required">
+                Please fill out your full name
+            </div>
+            <div class="alert alert-danger" *ngIf="fullName.errors.minlength">
+                Please enter at least {{fullName.errors.minlength.requiredLength}} characters
+            </div>
+        </div>
+        <label for="sEmail">Email</label>
+        <input
+                ngControl="sEmail"
+                #sEmail="ngForm"
+                id="sEmail"
+                type="text"
+                class="form-control"
+                required
+                placeholder="Enter the your email"
+                pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*">
+        <div *ngIf="sEmail.touched && sEmail.errors">
+            <div class="alert alert-danger" *ngIf="sEmail.errors.required">
+                Please fill out your full name
+            </div>
+        </div>
+        <label for="fEmail">Frequency of emails</label>
+        <select ngControl="fEmail" #fEmail="ngForm" id="fEmail" class="form-control">
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+        </select>
+    </div>
+    <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Submit</button>
+</form>

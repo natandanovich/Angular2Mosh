@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./emailsubscription.component"], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,33 +10,31 @@ System.register(['angular2/core', "./emailsubscription.component"], function(exp
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, emailsubscription_component_1;
-    var AppComponent;
+    var core_1;
+    var EmailSubscriptionComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (emailsubscription_component_1_1) {
-                emailsubscription_component_1 = emailsubscription_component_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            EmailSubscriptionComponent = (function () {
+                function EmailSubscriptionComponent() {
                 }
-                AppComponent = __decorate([
+                EmailSubscriptionComponent.prototype.onSubmit = function (form) {
+                    console.log(form);
+                };
+                EmailSubscriptionComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        template: "<div class=\"mailForm\">\n                <emailSubscription></emailSubscription>\n               </div>\n\n",
-                        styles: ["\n    .mailForm {\n    padding: 50px;\n    }\n    "],
-                        directives: [emailsubscription_component_1.EmailSubscriptionComponent],
+                        selector: 'emailSubscription',
+                        templateUrl: './app/emailsubscription.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], EmailSubscriptionComponent);
+                return EmailSubscriptionComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("EmailSubscriptionComponent", EmailSubscriptionComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=emailsubscription.component.js.map
