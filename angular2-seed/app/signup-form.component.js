@@ -1,4 +1,4 @@
-System.register(['angular2/core', './signup-form.component'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,33 +10,28 @@ System.register(['angular2/core', './signup-form.component'], function(exports_1
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, signup_form_component_1;
-    var AppComponent;
+    var core_1;
+    var SignUpFormComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (signup_form_component_1_1) {
-                signup_form_component_1 = signup_form_component_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            SignUpFormComponent = (function () {
+                function SignUpFormComponent() {
                 }
-                AppComponent = __decorate([
+                SignUpFormComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        directives: [signup_form_component_1.SignUpFormComponent],
-                        template: "\n        <div class=\"formSignup\">\n         <signup-form></signup-form>\n        </div>\n    ",
-                        styles: ["\n        .formSignup{\n        padding: 50px;\n        }"]
+                        selector: 'signup-form',
+                        templateUrl: 'app/signup-form.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], SignUpFormComponent);
+                return SignUpFormComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("SignUpFormComponent", SignUpFormComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=signup-form.component.js.map

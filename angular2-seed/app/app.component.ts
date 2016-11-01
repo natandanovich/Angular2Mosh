@@ -1,7 +1,18 @@
 import {Component} from 'angular2/core';
+import {SignUpFormComponent} from './signup-form.component'
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    directives: [SignUpFormComponent],
+    template: `
+        <div class="formSignup">
+         <signup-form></signup-form>
+        </div>
+    `,
+    styles: [`
+        .formSignup{
+        padding: 50px;
+        }`]
 })
-export class AppComponent { }
+export class AppComponent {
+}
