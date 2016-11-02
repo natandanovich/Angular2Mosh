@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e654bf2-bbaa-44b6-972e-f3cfe51fa975" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/signup-form.component.html" afterPath="$PROJECT_DIR$/app/signup-form.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/signup-form.component.js" afterPath="$PROJECT_DIR$/app/signup-form.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/signup-form.component.js.map" afterPath="$PROJECT_DIR$/app/signup-form.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/signup-form.component.ts" afterPath="$PROJECT_DIR$/app/signup-form.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usernameValidators.js" afterPath="$PROJECT_DIR$/app/usernameValidators.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usernameValidators.js.map" afterPath="$PROJECT_DIR$/app/usernameValidators.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/usernameValidators.ts" afterPath="$PROJECT_DIR$/app/usernameValidators.ts" />
     </list>
     <ignored path="angular2-seed.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,8 +62,8 @@
       <file leaf-file-name="signup-form.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/signup-form.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="97">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -252,12 +245,12 @@
       <updated>1476250461282</updated>
       <workItem from="1476250463234" duration="1496000" />
       <workItem from="1477986600796" duration="3615000" />
-      <workItem from="1478095693004" duration="2954000" />
+      <workItem from="1478095693004" duration="3141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8065000" />
+    <option name="totallyTimeSpent" value="8252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2869" y="-11" width="2542" height="1537" extended-state="0" />
@@ -382,8 +375,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/signup-form.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="97">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding />
         </state>
       </provider>
