@@ -8,8 +8,10 @@
                 ngControl="username"
                 #username="ngForm">
         <div *ngIf="username.control.pending">Checking for uniqueness..</div>
-        <div
-                *ngIf="username.errors && username.touched">
+        <div *ngIf="username.errors && username.touched">
+                <div *ngIf="username.errors.invalidLogin" class="alert alert-danger">
+                    Username or password is invalid
+                </div>
                 <div
                         *ngIf="username.errors.required"
                         class="alert alert-danger">
@@ -22,8 +24,6 @@
                     This user name is already taken
                 </div>
         </div>
-
-
     </div>
     <div class="form-group">
         <label for="password">Password</label>
