@@ -10,12 +10,15 @@
         <div
                 *ngIf="username.errors && username.touched">
                 <div
-                        *ngIf="!username.errors.required"
+                        *ngIf="username.errors.required"
                         class="alert alert-danger">
                     User name is required.
                 </div>
                 <div *ngIf="username.errors.cannotContainSpace" class="alert alert-danger">
                     User cannot contain space
+                </div>
+                <div *ngIf="username.errors.shouldBeUnique" class="alert alert-danger">
+                    This user name is already taken
                 </div>
         </div>
 
