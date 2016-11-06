@@ -1,7 +1,16 @@
 import {Component} from 'angular2/core';
+import {ChangePasswordComponent} from './changepassword.component';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    template: `<div class="changePasswordForm">
+                <change-password></change-password>
+               </div>`,
+    styles: [`
+    .changePasswordForm {
+    padding: 50px;
+}
+`],
+    directives: [ChangePasswordComponent],
 })
 export class AppComponent { }
