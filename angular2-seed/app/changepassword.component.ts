@@ -12,10 +12,13 @@ export class ChangePasswordComponent{
 
     constructor(fb: FormBuilder) {
         this.form = fb.group({
-            oldPassword: ['', Validators.compose([Validators.required])],
-            newPassword: ['', Validators.compose([Validators.required,PasswordValidators.passwordShouldBeAtLeastXChar])],
-            repeatPassword: ['', Validators.compose([Validators.required])]
-        });
+            oldPassword: ['', Validators.compose([Validators.required]),PasswordValidators.checkPasswordInServer],
+            newPassword: ['', Validators.compose([Validators.required,Validators.minLength(5)])],
+            repeatPassword: ['', Validators.compose([Validators.required])]}, {validator: PasswordValidators.checkIfPasswordEqual });
     }
 
+    changePassword(){
+         if (this.form.valid)
+            alert("Password successfully changed.");
+    }
 }

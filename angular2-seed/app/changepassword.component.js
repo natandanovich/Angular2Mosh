@@ -27,11 +27,14 @@ System.register(['angular2/core', 'angular2/common', './passwordValidator'], fun
             ChangePasswordComponent = (function () {
                 function ChangePasswordComponent(fb) {
                     this.form = fb.group({
-                        oldPassword: ['', common_1.Validators.compose([common_1.Validators.required])],
-                        newPassword: ['', common_1.Validators.compose([common_1.Validators.required, passwordValidator_1.PasswordValidators.passwordShouldBeAtLeastXChar])],
-                        repeatPassword: ['', common_1.Validators.compose([common_1.Validators.required])]
-                    });
+                        oldPassword: ['', common_1.Validators.compose([common_1.Validators.required]), passwordValidator_1.PasswordValidators.checkPasswordInServer],
+                        newPassword: ['', common_1.Validators.compose([common_1.Validators.required, common_1.Validators.minLength(5)])],
+                        repeatPassword: ['', common_1.Validators.compose([common_1.Validators.required])] }, { validator: passwordValidator_1.PasswordValidators.checkIfPasswordEqual });
                 }
+                ChangePasswordComponent.prototype.changePassword = function () {
+                    if (this.form.valid)
+                        alert("Password successfully changed.");
+                };
                 ChangePasswordComponent = __decorate([
                     core_1.Component({
                         selector: 'change-password',
