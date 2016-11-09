@@ -1,6 +1,13 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
 @Component({
-  selector: 'my-app',
-  template: '<h1>My First Angular App</h1>'
+    selector: 'my-app',
+    template: `
+        <input id="search" type="text" class="form-control">
+    `
 })
-export class AppComponent { }
+export class AppComponent {
+    constructor() {
+    }
+}
+
