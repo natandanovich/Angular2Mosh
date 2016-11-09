@@ -15,7 +15,16 @@ var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent.prototype.ngAfterViewInit = function () {
-        var keyups = Rx_1.Observable.fromEvent($("#search"), "keyup");
+        var keyups = Rx_1.Observable.fromEvent($("#search"), "keyup")
+            .map(function (e) { return e.target.value; })
+            .filter(function (text) { return text.length >= 3; })
+            .debounceTime(400)
+            .distinctUntilChanged()
+            .flatMap(function (searchTerm) {
+            var url = "https://api.spotify.com/v1/search?type=artist&q=" + searchTerm;
+            var promise = $.getJSON(url);
+            return Rx_1.Observable.fromPromise(promise);
+        });
         keyups.subscribe(function (data) {
             console.log(data);
         });
