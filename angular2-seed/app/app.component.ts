@@ -1,4 +1,7 @@
+/// <reference path="../typings/tsd.d.ts" />
+
 import {Component} from '@angular/core';
+import {Observable} from 'rxjs/Rx';
 
 @Component({
     selector: 'my-app',
@@ -7,7 +10,15 @@ import {Component} from '@angular/core';
     `
 })
 export class AppComponent {
-    constructor() {
+    ngAfterViewInit() {
+
+        var keyups = Observable.fromEvent($("#search"), "keyup");
+
+        keyups.subscribe(function(data) {
+            console.log(data);
+        });
+
     }
+
 }
 
