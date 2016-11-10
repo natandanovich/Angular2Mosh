@@ -25,8 +25,9 @@ var AppComponent = (function () {
             var promise = $.getJSON(url);
             return Rx_1.Observable.fromPromise(promise);
         });
-        keyups.subscribe(function (data) {
+        var subscription = keyups.subscribe(function (data) {
             console.log(data);
+            subscription.unsubscribe();
         });
     };
     AppComponent = __decorate([

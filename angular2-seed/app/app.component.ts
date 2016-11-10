@@ -25,8 +25,10 @@ export class AppComponent {
                 return Observable.fromPromise(promise);
             });
 
-        keyups.subscribe(function(data) {
+        var subscription = keyups.subscribe(function(data) {
             console.log(data);
+
+        subscription.unsubscribe();
         });
 
     }
