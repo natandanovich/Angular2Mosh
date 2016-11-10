@@ -9,15 +9,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var post_service_1 = require('./post.service');
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(_postService) {
+        this._postService = _postService;
+        this.isLoading = true;
+        //this._postService.createPost({userId: 1, title: "a", body: "b"})
     }
+    AppComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this._postService.getPosts().subscribe(function (posts) {
+            _this.isLoading = false;
+            console.log(posts[0].title);
+        });
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>My First Angular App</h1>'
+            template: "<h1>My First Angular App</h1>\n                <div *ngIf=\"isLoading\">\n                <i class=\"fa fa-spinner fa-spin\"></i>\n</div>\n",
+            providers: [post_service_1.PostService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [post_service_1.PostService])
     ], AppComponent);
     return AppComponent;
 }());

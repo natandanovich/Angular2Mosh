@@ -8,22 +8,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
 var http_1 = require('@angular/http');
-var AppModule = (function () {
-    function AppModule() {
+require('rxjs/add/operator/map');
+var core_1 = require('@angular/core');
+var PostService = (function () {
+    function PostService(_http) {
+        this._http = _http;
+        this._url = "https://jsonplaceholder.typicode.com/posts";
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, http_1.JsonpModule],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    PostService.prototype.getPosts = function () {
+        return this._http.get(this._url).map(function (res) { return res.json(); });
+    };
+    PostService.prototype.createPost = function (post) {
+        return this._http.post(this._url, JSON.stringify(post)).map(function (res) { return res.json(); });
+    };
+    PostService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [http_1.Http])
+    ], PostService);
+    return PostService;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.PostService = PostService;
+//# sourceMappingURL=post.service.js.map
